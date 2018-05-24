@@ -5,7 +5,7 @@ wpCurrDir=$PWD
 pkg=devTools
 gitRepo="linux-scripts-apps-wp.git"
 installDir="/tmp/scripts/apps/WP"
-if [ -f "~/.ssh/gitHub.key" ]; then
+if [ -f ~/.ssh/gitHub.key ]; then
    clone="git clone git@github.com:RMelanson/"
 else
    clone="git clone https://github.com/RMelanson/"
