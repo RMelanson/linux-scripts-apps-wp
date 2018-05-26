@@ -5,6 +5,12 @@ if [ "$EUID" -ne 0 ]
   exit -1
 fi
 
+if [ -z "$1" ]; then
+   branch=master
+else
+  branch=$1
+fi
+
 #Set Cloning Properties
 pkg=devTools
 gitRepo="linux-scripts-apps-wp.git"
