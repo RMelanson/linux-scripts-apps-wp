@@ -1,1 +1,4 @@
-# ToDo Create Environment script
+#!/bin/bash
+
+# WORDPRESS CONFIGURATION PARAMETERS
+pkg=wordpress
