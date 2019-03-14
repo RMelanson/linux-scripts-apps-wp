@@ -12,8 +12,9 @@ yum update -y
 #INSTALL GIT
 yum install git -y
 
-#Set Cloning Properties
-pkg=devTools
+# SETUP ENVIRONMENT AND PARAMETERS
+. ./env/setEnv.sh
+
 gitRepo="linux-scripts-apps-wp.git"
 installDir="/tmp/scripts/apps/WP"
 if [ -f ~/.ssh/gitHub.key ]; then
