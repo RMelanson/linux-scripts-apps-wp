@@ -1,6 +1,6 @@
 #!/bin/bash
 
 # WORDPRESS CONFIGURATION PARAMETERS
-pkg=wordpress
+pkg=WORD_PRESS
 gitRepo="linux-scripts-apps-wp.git"
-installDir="/tmp/scripts/apps/WP"
+installDir="/tmp/scripts/apps/$pkg"
