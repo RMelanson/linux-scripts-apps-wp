@@ -1,5 +1,4 @@
 #!/bin/bash
-wpCurrDir=$PWD
 
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root or under sudo"
@@ -13,7 +12,10 @@ yum update -y
 yum install git -y
 
 # SETUP ENVIRONMENT AND PARAMETERS
-. ./env/setEnv.sh
+wpCurrDir=$PWD
+pkg=WORD_PRESS
+gitRepo="linux-scripts-apps-wp.git"
+installDir="/tmp/scripts/apps/$pkg"
 
 if [ -f ~/.ssh/gitHub.key ]; then
    clone="git clone git@github.com:RMelanson/"
