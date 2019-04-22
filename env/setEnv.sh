@@ -1,8 +1,12 @@
 #!/bin/bash
 
 # WORDPRESS CONFIGURATION PARAMETERS
-pkg=WORD_PRESS
 bootstrap="swWpBootstrap.sh"
 
 gitRepo="linux-scripts-apps-wp.git"
-installDir="/tmp/scripts/apps/$pkg"
+
+#SET UP INSTALLATION DIRECTORY
+pkg=WORD_PRESS
+scriptType="apps"
+parentDir="/tmp/scripts/$scriptType/"
+installDir="$parentDir/$pkg"
