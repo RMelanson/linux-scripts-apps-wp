@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bootstrap=$webCurrDir/swWpBootstrap.sh
+bootstrap=$bootstrapDir/swWpBootstrap.sh
 if [ "$EUID" -ne 0 ]
 then
    sudo -n true 2/dev/null 2>&1
